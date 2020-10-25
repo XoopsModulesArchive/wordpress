@@ -1,0 +1,72 @@
+<table>
+
+<tr>
+	<{if $wp_content.show_inline_sidebar}>
+	<td colspan="3">
+	<{else}>
+	<td>
+	<{/if}>
+		<div id="wp-header">
+			<{includeq file="db:wp_header.html"}>
+		</div>
+	</td>
+</tr>
+
+<tr>
+	<{if $wp_content.show_inline_sidebar}>
+	<td colspan="3" class="wp-delimiter-horizontal">
+	<{else}>
+	<td class="wp-delimiter-horizontal">
+	<{/if}>
+	&nbsp;
+	</td>
+</tr>
+
+<tr>
+	<{if $wp_content.show_inline_sidebar}>
+	<td class="wp_sidebar">
+		<div id="wp-sidebar">
+		<{includeq file="db:wp_sidebar.html" wp_content=$wp_content}>
+		</div>
+	</td>
+	<td class="wp-delimiter-vertical"> &nbsp; </td>
+	<{/if}>
+	<td>
+		<div id="wp-content">
+
+			<{if $wp_content.title}>
+			<div style="padding: 0 5px; font-size: 90%;"><{$wp_content.title}></div>
+			<{/if}>
+	
+			<{foreach item=post from=$wp_content.posts}>
+			<div class="wp-post">
+				<{if $post.previous OR $post.next}>
+				<div class="wp-post-nav">
+					<div class="alignleft"><{$post.previous}></div>
+					<div class="alignright"><{$post.next}></div>
+				</div>
+				<{/if}>
+				
+				<div class="wp-post" id="post-<{$post.id}>">
+					<div class="wp-post-title"><a href="<{$post.link}>" rel="bookmark" title="Permanent Link to <{$post.title}>"><{$post.title}></a></div>
+					<div class="wp-post-meta"><{$post.time}> &#8212; <{$post.author}> (<{$post.views}>)</div>
+					
+					<div class="wp-post-entry">
+						<{$post.content}>
+					</div>
+			
+					<div class="wp-post-meta"><{$wp_content.lang_under}> <{$post.category}> <{if $post.edit}> <strong>|</strong> <{$post.edit}> <{/if}> <{if $post.comment}><strong>|</strong> <{$post.comment}><{/if}></div>
+					
+				</div>
+				<p><{$post.comments}></p>
+			</div>
+			<{/foreach}>
+		
+			<div class="wp-page-nav">
+				<{$wp_content.posts_nav}>
+			</div>
+		</div>
+	</td>
+</tr>
+
+</table>

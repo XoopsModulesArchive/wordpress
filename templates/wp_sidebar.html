@@ -1,0 +1,86 @@
+	<{if $wp_content.author_name}>
+	<div class="sidebar-item">
+		<div class="author-title"><a href="<{$wp_content.home_url}>/?author=<{$wp_content.author_id}>"><{$wp_content.author_name}></a></div>
+		<div class="author-description">
+			<{if $wp_content.author_image}>
+				<a href="<{$wp_content.home_url}>/?author=<{$wp_content.author_id}>">
+					<img src="<{$wp_content.author_image}>" alt="<{$wp_content.author_name}>">
+				</a>
+				<br>
+			<{/if}>
+			<{$wp_content.author_description}><br>
+			<div style="float: right;"><a href="<{$xoops_url}>/userinfo.php?uid=<{$wp_content.author_id}>"><{$smarty.const._MORE}></a></div>
+		</div>
+	</div>
+	<{/if}>
+	
+	<{if $wp_content.page}>
+	<div class="sidebar-item">
+		<div class="sidebar-title"><{$smarty.const._MD_WORDPRESS_PAGES}></div>
+		<ul>
+		<{$wp_content.page}>
+		</ul>
+	</div>
+	<{/if}>
+
+	<div class="sidebar-item">
+		<div class="sidebar-title"><{$smarty.const._MD_WORDPRESS_CATEGORIES}></div>
+		<ul>
+		<{$wp_content.category}>
+		</ul>
+	</div>
+	
+	<{if $wp_content.recent.authors}>
+	<div class="sidebar-item">
+		<div class="sidebar-title"><{$smarty.const._MD_WORDPRESS_RECENT_AUTHORS}></div>
+		<ul>
+			<{foreach item=author from=$wp_content.recent.authors}>
+			<li><a href="<{$author.link}>" title="<{$author.name}>"><{$author.name}> (<{$author.count}>)</a></li>
+			<{/foreach}>
+		</ul>
+	</div>
+	<{/if}>
+
+	<{if $wp_content.recent.posts}>
+	<div class="sidebar-item">
+		<div class="sidebar-title"><{$smarty.const._MD_WORDPRESS_RECENT_POSTS}></div>
+		<ul>
+			<{foreach item=post from=$wp_content.recent.posts}>
+			<li><a href="<{$post.link}>" rel="bookmark" title="<{$post.title}>"><{$post.title}></a></li>
+			<{/foreach}>
+		</ul>
+	</div>
+	<{/if}>
+	
+	<{if $wp_content.recent.comments}>
+	<div class="sidebar-item">
+		<div class="sidebar-title"><{$smarty.const._MD_WORDPRESS_RECENT_COMMENTS}></div>
+		<ul>
+			<{foreach item=comment from=$wp_content.recent.comments}>
+			<li><a href="<{$comment.link}>" title="<{$comment.type}>"><{$comment.author}> - <{$comment.content}></a></li>
+			<{/foreach}>
+		</ul>
+	</div>
+	<{/if}>
+	
+	<div class="sidebar-item">
+		<div class="sidebar-title"><{$smarty.const._MD_WORDPRESS_ARCHIVES}></div>
+		<ul>
+		<{$wp_content.archive}>
+		</ul>
+	</div>
+
+	<{if $wp_content.link}>
+	<div class="sidebar-item">
+		<div class="sidebar-title"><{$smarty.const._MD_WORDPRESS_LINKS}></div>
+		<ul class="sidebar-link">
+		<{$wp_content.link}>
+		</ul>
+	</div>
+	<{/if}>
+	
+	<{if $wp_content.searchform}>
+	<div class="search-form">
+		<{$wp_content.searchform}>
+	</div>
+	<{/if}>

@@ -1,0 +1,1168 @@
+2004-10-24  0.3.3
+	* admin/myblocksadmin.php:
+	* include/blocksadmin.inc.php:
+		ブロック管理画面の一覧に表示画面選択リストを表示
+
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_authors.php:
+	* blocks/wp_categories.php:
+	* blocks/wp_links.php:
+	* blocks/wp_recent_comments.php:
+		ブロック用のスタイルシート呼出処理の追加
+		一覧スタイル指定用クラスを追加
+
+	* blocks/wp_recent_comments.php:
+		ブロック出力オプションの追加
+
+	* blocks/wp_recent_posts.php:
+	* themes/default/wp-blocks.css.php:
+		一覧スタイル指定用クラスを追加
+
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+	* language/english/blocks.php:
+	* language/english/main.php:
+	* language/german/blocks.php:
+	* language/german/main.php:
+	* language/japanese/blocks.php:
+	* language/japanese/main.php:
+	* language/portuguesebr/blocks.php:
+	* language/portuguesebr/main.php:
+	* wp-includes/template-functions-post.php:
+		タイトルが入力されていない場合［無題］とか(No Tltle)とかを表示するように修正
+
+	* templates/blocks/wp_block_contents.html:
+	* wp-includes/functions.php:
+		CSSの埋め込み部分をCSSに対応していないブラウザ用にHTMLコメントとして扱われる用に修正
+
+	* themes/default/wp-layout.css:
+		一部のCSSスタイル設定不具合対応
+
+	* wp-admin/admin-header.php:
+		管理画面表示時に、CenterBlock及びRightBlockを非表示に
+
+	* wp-admin/bookmarklet.js.php:
+	* wp-admin/bookmarklet.php:
+	* wp-admin/post.php:
+	* wp-admin/profile.php:
+		IEのコンテキストメニューによるBookmarklet機能がIE6.0SP1以降でも動作するように修正
+
+	* wp-admin/admin-header.php:
+	* wp-admin/bookmarklet.php:
+	* wp-admin/categories.php:
+	* wp-admin/edit.php:
+	* wp-admin/link-add.php:
+	* wp-includes/functions-formatting.php:
+		パラメータのサニタイズ強化
+
+	* wp-admin/edit-comments.php:
+		並べ替えオプションパラメータ受け渡し不具合対応
+
+	* wp-admin/menu.ja.txt:
+	* wp-admin/menu.php:
+		WordPress管理メインメニューの日本語化一部対応
+
+	* wp-admin/spaw/class/script.js.php:
+	* wp-admin/spaw/config/spaw_control.config.php:
+	* wp-admin/spaw/dialogs/img_library.php:
+		SPAWによる画像添付時にXOOPS Image Manager及びMyAlbumモジュールの画像参照対応
+
+	* wp-admin/upload.php:
+		画像サムネール作成のGD2 GD自動切り替え対応
+
+	* wp-admin/xoops_version.php:
+		wp-adminディレクトリ下での事項もWordPressモジュール内と認識させるためにダミーのxoops_version.phpを配置
+
+	* wp-blog-header.php:
+	* wp-includes/template-functions-author.php:
+		日本語ログイン名への対応強化
+
+	* wp-includes/class-xmlrpc.php:
+		PING送信時のタイムアウト設定追加
+
+	* wp-includes/functions.php:
+		PING送信を若干効率化
+
+	* wp-includes/template-functions-author.php:
+		XOOPSのProfileへのリンクを可能に（function the_author_info_link($idmode='') を追加）
+
+	* wp-ktai.php:
+		拡張子のない画像のタイプ判定に対応
+		未承認コメントを表示しないように修正
+
+	* wp-mail.php:
+		POP用グローバル変数名の変更
+		エラーメッセージの出力方法の調整
+		モブログ投稿不具合に対応
+		画像サムネール作成のGD2 GD自動切り替え対応
+
+	* wp-mail.php:
+	* wp-mail-conf.php.dist:
+		勝手に実行されないように実行キーワードの指定を可能に
+
+	* wp-settings.php:
+		複数ブログ設置時のプラグイン２重読み込み抑止
+
+	* xmlrpc.php:
+		こうさぎでPukiWikiプラグインを有効にしたBlogへの投稿機能の手直し
+		投稿時の各略称設定に対応
+
+	* xoops_search.php:
+		サーバ時差指定値を利用
+
+	* xoops_version.php:
+		ブロック出力オプションの追加
+
+	* wp-content/plugins/modPukiWiki/*
+		modPukiWikiの最新版適用
+
+	* ReadMe.ja-eucjp:
+	* themes/default/wp-admin.css:
+	* wp-comments-popup.php:
+		一部手直し
+
+	* weblogs.com.changes.cache:
+		不用ファイルの削除
+
+2004-09-05  0.3.2
+	* wp-admin/edit-form-advanced.php:
+	* wp-admin/edit-form.php:
+		PHPショートタグを正式なPHPタグに変更。(Thanks tohokuaiki!)
+
+	* wp-comments-popup.php:
+		コメントポップアップ機能の修正
+
+	* wp-mail.php:
+		Apple-Mail対応
+		XOOPSユーザIDの漢字対応
+
+	* wp-blog-header.php:
+		ApacheのRewriteモジュール無しに擬似的なパーマネントリンク機能追加
+
+	* wp-lang/lang_ja.php:
+		プラグイン管理画面のメッセージ修正
+
+	* blocks/wp_contents.php:
+	* wp-settings.php:
+		プラグインの読込条件を少し修正
+
+	* wp-content/plugins/modPukiWiki/....
+	* themes/default/wp-layout.css:
+		modPukiWiki最新版適用
+
+	* themes/default/wp-blocks.css.php:
+		PukiWikiレンダリングブログの記事ブロックスタイルを追加
+
+	* blocks/wp_recent_comments.php:
+		コメント一覧の内容にプラグインを適用するように修正
+
+	* xmlrpc.php:
+		こうさぎ投稿用のHTML->Wiki簡易変換
+
+	* b2rdf.php:
+	* b2rss.php:
+	* b2rss2.php:
+	* phpinfo.php.orig:
+	* wp-admin/change-functions.php:
+	* wp-admin/change-functions.php.orig:
+	* wp-admin/change.php:
+	* wp-admin/change.php.orig:
+	* wp-admin/install-config.php:
+	* wp-admin/install-config.php.orig:
+	* wp-admin/install-helper.php:
+	* wp-admin/install-helper.php.orig:
+	* wp-admin/install.php:
+	* wp-admin/install.php.orig:
+	* wp-admin/upgrade-functions.php:
+	* wp-admin/upgrade-functions.php.orig:
+	* wp-admin/upgrade.php:
+	* wp-admin/upgrade.php.orig:
+	* wp-config-sample.php:
+	* wp-login.php:
+	* wp-login.php.orig:
+	* wp-moblog.php.orig:
+	* wp-register.php:
+	* wp-register.php.orig:
+		XOOPSモジュールで不要なファイルの整理
+
+	* wp-admin/menu.txt:
+	* wp-admin/templates.php:
+	* wp-admin/templates.php.orig:
+		テンプレート編集機能の削除
+
+2004-08-23 0.3.1
+	* wp-content/plugins/pukiwiki.php:
+	* themes/default/wp-layout.css:
+	* wp-content/plugins/modPukiWiki/PukiWiki.ini.php:
+	* wp-content/plugins/modPukiWiki/PukiWiki.ini.php.dist:
+	* wp-content/plugins/modPukiWiki/PukiWiki.php:
+	* wp-content/plugins/modPukiWiki/cache/index.html:
+	* wp-content/plugins/modPukiWiki/class/PukiWikiConfig.php:
+	* wp-content/plugins/modPukiWiki/class/PukiWikiElement.php:
+	* wp-content/plugins/modPukiWiki/class/PukiWikiFunc.php:
+	* wp-content/plugins/modPukiWiki/class/PukiWikiLink.php:
+	* wp-content/plugins/modPukiWiki/class/PukiWikiPlugin.php:
+	* wp-content/plugins/modPukiWiki/class/PukiWikiRender.php:
+	* wp-content/plugins/modPukiWiki/config/default.php:
+	* wp-content/plugins/modPukiWiki/config/wordpress.php:
+	* wp-content/plugins/modPukiWiki/config/entities.dat:
+	* wp-content/plugins/modPukiWiki/images/file.gif:
+	* wp-content/plugins/modPukiWiki/images/noimage.png:
+	* wp-content/plugins/modPukiWiki/lib/func.php:
+	* wp-content/plugins/modPukiWiki/plugin/aname.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/br.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/clear.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/color.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/font.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/img.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/isbn.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/ref.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/ruby.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/showrss.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/size.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/tenki.inc.php:
+	* wp-content/plugins/modPukiWiki/plugin/xoopsblock.inc.php:
+	* wp-content/plugins/modPukiWiki/sample.css:
+	* wp-content/plugins/modPukiWiki/plugin/ref.inc.php:
+	* wp-content/plugins/modPukiWiki/sample.css:
+		PukiWikiレンダープラグインを追加
+
+	* wp-includes/template-functions-post.php:
+		Pluginにレンダリングをまかせた場合に、RSSの出力が正常にされるように修正
+
+	* wp-admin/post.php:
+		Pluginにレンダリングをまかせた場合、TrackBackを正常に送信するように修正
+
+	* wp-settings.php:
+		プラグインを読み込むタイミングを修正
+		記事ブロックでのプラグインの適用に対応
+
+	* wp-includes/functions.php:
+		filter削除機能のバグ対応
+
+	* wp-admin/options.php:
+	* wp-settings.php:
+		サイトのURLをXOOPSの環境から取得するように変更
+
+	* wp-content/plugins/google-hilite.php:
+	* wp-content/plugins/hello.php:
+	* wp-content/plugins/markdown.php:
+	* wp-content/plugins/pukiwiki.php:
+	* wp-content/plugins/textile1.php:
+	* wp-content/plugins/textile2.php:
+		複数ブログ共存時のプラグイン関数２重定義の回避
+
+	* language/japanese/modinfo.php:
+		メッセージの訂正
+
+	* wp-admin/import-mt.php.orig:
+		MovableTypeデータのWordPressモジュールへの移行に対応
+
+	* xmlrpc.php:
+		幾つかのAPIが日本語対応していなかった。
+
+	* wp-mail.php:
+		blog_charsetが正常に取得出来ていなかった。
+		投稿時のリンク先へのPINGBACKをしないように変更
+
+	* wp-comments.php:
+	* wp-config-extra.php:
+	* themes/default/index-template.php:
+	* wp-includes/links-update-xml.php:
+	* wp-includes/functions.php:
+			複数ブログ設置時に各ブログ固有のテーマディレクトリを参照出来ていなかった
+
+	* wp-ktai-comments-post.php:
+	* wp-ktai.php:
+		携帯用(i-mode)の閲覧プログラムを追加
+		Copyright (c) 2004 Naoki Chiba All rights reserved.
+
+	* index.php:
+		携帯用Viewerへの自動リダイレクトに対応
+
+	* wp-includes/vars.php:
+		AgentにDocomoのi-modeブラウザを追加
+
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_authors.php:
+	* blocks/wp_categories.php:
+	* blocks/wp_links.php:
+		<li>タグに対応する<ul>タグが発行されていなかった。
+
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+		ソースの先頭が<?phpでなく<?で開始されていた (Thanks! はすい)
+
+	* include/updateblock.inc.php
+		Block Options削除時の不具合修正 （Thanks! GIJOE)
+
+2004-08-07  nobu
+	* wp-lang/lang_pt_BR.php:
+		_LANG_WAU_ATTACH_ICONの２重定義を削除
+
+2004-08-06  nobu
+	* xmlrpc.php:
+		こうさぎ投稿対応の修正
+
+2004-08-05  nobu
+	* wp-includes/functions-formatting.php:
+	* wp-includes/template-functions-general.php:
+	* wp-lang/lang_de.php:
+	* wp-lang/lang_en.php:
+	* wp-lang/lang_ja.php:
+	* wp-lang/lang_pt_BR.php:
+		カレンダーが文字化けする環境への対応
+
+2004-08-02  0.3.0
+	* wp-includes/template-functions-author.php:
+	* wp-includes/template-functions-category.php:
+	* wp-includes/template-functions-comment.php:
+	* wp-includes/template-functions-general.php:
+	* wp-includes/template-functions-geo.php:
+	* wp-includes/template-functions-links.php:
+	* wp-includes/template-functions-post.php:
+	* wp-includes/template-functions.php:
+		テンプレート関数群をWordPress1.2に一部準拠し、ファイル構成も準拠して分割
+
+	* themes/default/content_block-template.php:
+	* themes/default/index-template.php:
+		テンプレート関数群をWordPress1.2に一部準拠しテンプレートのデフォルトに反映
+
+	* wp-includes/functions.php:
+		WordPress1.2のプラグインに対応する関数を追加しファイル構成も準拠して分割
+
+	* wp-admin/admin-footer.php:
+	* wp-admin/admin-header.php:
+		WordPress1.2のプラグインに対応するアクションを追加
+	
+	* wp-content/plugins/hello.php
+	* wp-content/plugins/google-hilite.php
+	* wp-content/plugins/markdown.php
+	* wp-content/plugins/textile1.php
+	* wp-content/plugins/textile2.php
+		WordPress1.2 ME標準添付のプラグインファイルを追加
+
+	* wp-admin/menu.txt:
+	* wp-admin/plugins.php:
+		WordPress1.2のプラグインの設定画面とメニューを追加
+
+	* wp-includes/vars.php:
+		WordPress1.2のフィルターに対応
+
+	* wp-admin/options-permalink.php:
+	* wp-feed.php:
+		パーマネントリンクの構成をWordPress1.2に準拠
+
+	* wp-blog-header.php:
+		パーマネントリンクの構成をWordPress1.2に準拠するため、投稿者名による検索に対応。
+
+	* blocks/wp_categories.php:
+	* themes/default/wp-admin.css:
+	* wp-admin/admin-functions.php:
+	* wp-admin/admin-header.php:
+	* wp-admin/categories.php:
+	* wp-admin/edit-form-advanced.php:
+	* wp-admin/edit-form-comment.php:
+	* wp-admin/edit-form.php:
+	* wp-admin/post.php:
+	* wp-blog-header.php:
+	* wp-includes/functions.php:
+	* wp-includes/template-functions-category.php:
+		WordPress1.2のカテゴリーの階層化に対応
+
+	* blocks/wp_authors.php:
+	* xoops_version.php:
+	* wp-includes/template-functions-author.php:
+		投稿者一覧XOOPSブロックの追加
+
+	* blocks/wp_recent_posts.php:
+	* xoops_version.php:
+		最新投稿ブロックでNew表示オプションの追加
+		最新投稿ブロックでカテゴリーによる絞り込みに対応
+
+	* wp-admin/users.php:
+		XOOPSの初期管理ユーザ以外のレベル10のユーザのレベルダウンに対応
+
+	* blocks/wp_contents.php:
+		WordPress1.2で使用しているキャッシュの初期化を追加
+
+	* admin/admin.php:
+	* admin/blockform.php:
+	* admin/index.php:
+	* admin/menu.php:
+	* admin/myblocksadmin.php:
+	* admin/mymenu.php:
+		ブロック管理画面でブロックの複製に対応(Thanks GIJOE)
+
+	* include/updateblock.inc.php:
+	* xoops_version.php:
+		モジュールアップデート時の複製ブロックパラメータの保存に対応(Hack)
+
+	* wp-images/wordpress.png:
+	* wp-images/wordpress0.png:
+	* wp-images/wordpress1.png:
+	* wp-images/wordpress2.png:
+	* wp-images/wordpress3.png:
+	* wp-images/wordpress4.png:
+	* wp-images/wordpress5.png:
+	* wp-images/wordpress6.png:
+	* wp-images/wordpress7.png:
+	* wp-images/wordpress8.png:
+	* wp-images/wordpress9.png:
+		複製モジュール固有のアイコンを用意
+
+	* wp-lang/lang_de.php:
+	* wp-lang/lang_en.php:
+	* wp-lang/lang_ja.php:
+	* wp-lang/lang_pt_BR.php:
+	* language/english/modinfo.php:
+	* language/german/modinfo.php:
+	* language/japanese/modinfo.php:
+	* language/portuguesebr/modinfo.php:
+		New Language Files
+		 (Brazilian Portuguese language files, updated by Yuji)
+
+	* 多くのファイル:
+		$HTTP_GET_VARSを$_GETなどのスーパーグローバル変数に置き換え
+
+	* blocks/wp_contents.php:
+		グローバル変数の後始末をしていなかったた事による不具合に対応
+
+	* index.php:
+		複数ブログ設置時のテンプレート・スタイルシート取得先がおかしいバグに対応
+
+	* wp-includes/template-functions-category.php:
+	* wp-includes/template-functions.php:
+		カテゴリー一覧でDescriptionでの並び替えができなかったバグに対応
+
+	* wp-includes/kses.php:
+		コメント表示時のの文字化け対応
+
+	* xmlrpc.php:
+		「こうさぎ」からのへの暫定対応
+
+	* wp-admin/admin-header.php:
+	* wp-admin/link-add.php:
+	* wp-admin/link-manager.php:
+		WordPress管理画面でのJavaScriptの動作不具合に対応
+
+	* wp-includes/functions-formatting.php:
+	* header.php:
+	* header.php:
+		print.cssの取得先指定の誤り修正
+
+2004-07-20  0.2.3
+	* admin/users.php
+		ユーザー削除機能を復活
+
+	* admin/menu.php:
+	* language/english/modinfo.php:
+	* language/german/modinfo.php:
+	* language/japanese/modinfo.php:
+	* language/portuguesebr/modinfo.php:
+		管理メニューのメッセージ修正
+
+	* wp-includes/functions.php:
+	* xmlrpc.php:
+		Loggingを専用ディレクトリに出力
+
+	* wp-mail.php:
+		require経由での呼出に対応
+
+	* blocks/wp_calendar.php:
+		カレンダの月が変わらなくなっていた
+
+	* wp-admin/post.php:
+		コメントの編集が出来なくなっていた
+
+	* blocks/wp_categories.php:
+		ブロックの動作が不正だった
+
+	* language/german/main.php:
+	* language/german/modinfo.php:
+		Could not Install on German environment
+
+2004-07-08  0.2.2
+	* blocks/wp_contents.php:
+	* blocks/wp_recent_posts.php:
+	* wp-admin/users.php:
+	* wp-atom.php:
+	* wp-commentsrss2.php:
+	* wp-includes/functions.php:
+	* wp-includes/template-functions.php:
+	* wp-rdf.php:
+	* wp-rss.php:
+	* wp-rss2.php:
+		RSS,RDFの文字コード決定ロジックを変更。
+
+	* wp-trackback.php:
+		Trackback受信が、mbstring extention不在の場合に受けられないようになっていた。
+
+	* wp-mail.php:
+		Windowsサーバで添付ファイルがきちんと保存されない不具合に対応
+
+	* wp-admin/categories.php:
+	* wp-admin/edit-comments.php:
+	* wp-admin/edit.php:
+	* wp-admin/link-categories.php:
+	* wp-admin/link-manager.php:
+	* wp-admin/options-permalink.php:
+	* wp-admin/options.php:
+	* wp-admin/post.php:
+	* wp-admin/profile.php:
+	* wp-blog-header.php:
+	* wp-includes/links.php:
+	* xoops_search.php:
+		ＤＢ操作関連の細かな不具合の修正
+
+2004-07-04  0.2.1
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+	* wp-images/atom.gif:
+	* wp-images/rdf.gif:
+	* wp-images/rdf.png:
+	* wp-images/rss.gif:
+	* wp-images/rss.png:
+	* wp-images/rss2.gif:
+	* wp-images/rss_comment.gif:
+	* wp-images/xml.gif:
+	* xoops_version.php:
+		RSS,RDF,ATOM リンクアイコンを最新記事XOOPSブロックに追加
+
+	* wp-atom.php:
+	* wp-commentsrss2.php:
+	* wp-includes/template-functions.php:
+	* wp-rdf.php:
+	* wp-rss.php:
+	* wp-rss2.php:
+		RSSやATOMを日本語の場合はUTF-8にて出力するように変更
+
+	* wp-includes/functions.php:
+		TrackBackURLに？を含む場合にうまくトラックバック出来なかった
+
+	* themes/default/wp-admin.css:
+		Safariでの投稿画面レイアウト崩れへの対処
+
+	* templates/blocks/wp_block_contents.html:
+		スタイルの２重出力抑止
+
+	* blocks/wp_contents.php:
+		時差のパラメータ取得にバグ
+
+	* wp-commentsrss2.php:
+		Comment RSSの文字コード設定の不具合対応他
+
+	* wp-includes/kses.php:
+		Comment許可タグ変数取得の不具合対応
+
+	* language/english/main.php:
+		Some messages are added.
+
+	* language/german/admin.php:
+	* language/german/index.html:
+	* language/german/main.php:
+	* language/german/modinfo.php:
+	* wp-lang/lang_de.php:
+		German Language Files are made by Joker (http://localfoo.info/)
+
+	* language/portuguesebr/admin.php:
+	* language/portuguesebr/index.html:
+	* language/portuguesebr/main.php:
+	* language/portuguesebr/modinfo.php:
+	* wp-lang/lang_pt_BR.php:
+		New Brazilian Portuguese language files, updated by Yuji
+
+2004-06-26  0.2.0
+	* Almost all files
+		モジュールの複製可能化
+		（Enable to clone this module)
+		WordPressテンプレートやスタイルのXOOPSテーマとの連動を可能に
+		(Can custmize WordPress templates and Style sheet with each Xoops themes)
+
+	* blocks/wp_contents.php:
+	* language/english/modinfo.php:
+	* language/japanese/modinfo.php:
+	* language/portugues.do.brasil/modinfo.php:
+	* wp-admin/categories.php:
+	* wp-admin/edit-form.php:
+	* wp-admin/edit.php:
+	* wp-admin/link-add.php:
+	* wp-admin/link-manager.php:
+	* wp-admin/menu.php:
+	* wp-admin/moderation.php:
+	* wp-admin/options.php:
+	* wp-admin/post.php:
+	* wp-admin/profile.php:
+	* wp-admin/users.php:
+	* wp-includes/functions.php:
+		define定数の再定義warning防止
+		WordPress設定オプションメニューの改善
+
+	* wp-admin/bookmarklet.php:
+	* wp-admin/edit-form-advanced.php:
+	* wp-admin/edit-form.php:
+	* wp-admin/post.php:
+	* wp-includes/functions.php:
+	* wp-trackback.php:
+		トラックバックの文字化け対応強化
+
+	* language/english/main.php:
+	* language/japanese/main.php:
+	* language/portugues.do.brasil/main.php:
+	* wp-blog-header.php:
+	* wp-config-extra.php:
+	* wp-config.php:
+	* wp-includes/functions.php:
+	* wp-includes/vars.php:
+	* wp-lang/lang_en.php:
+	* wp-lang/lang_ja.php:
+	* wp-lang/lang_pt_BR.php:
+	* wp-settings.php:
+		define定数の再定義warning防止
+
+	* blocks/wp_contents.php:
+	* language/english/modinfo.php:
+	* language/japanese/modinfo.php:
+	* language/portugues.do.brasil/modinfo.php:
+	* templates/blocks/wp_block_contents.html:
+	* xoops_version.php:
+		テーマディレクトリに記事ブロックのテンプレートを追加し、モジュールのオプションにて利用可能に。
+
+	* wp-admin/upload.php:
+	* wp-images/file.gif:
+		ファイルアップロード時にアイコンによるリンクオプションを追加
+
+	* phpinfo.php.orig:
+	* wp-admin/change.php:
+	* wp-admin/change.php.orig:
+	* wp-admin/change-functions.php:
+	* wp-admin/change-functions.php.orig:
+	* wp-admin/import-b2.php:
+	* wp-admin/import-b2.php.orig:
+	* wp-admin/import-blogger.php:
+	* wp-admin/import-blogger.php.orig:
+	* wp-admin/import-greymatter.php:
+	* wp-admin/import-greymatter.php.orig:
+	* wp-admin/import-mt.php:
+	* wp-admin/import-mt.php.orig:
+	* wp-admin/import-textpattern.php:
+	* wp-admin/import-textpattern.php.orig:
+	* wp-admin/install-config.php:
+	* wp-admin/install-config.php.orig:
+	* wp-admin/install-helper.php:
+	* wp-admin/install-helper.php.orig:
+	* wp-admin/install.php:
+	* wp-admin/install.php.orig:
+	* wp-admin/templates.php:
+	* wp-admin/templates.php.orig:
+	* wp-admin/upgrade-functions.php:
+	* wp-admin/upgrade-functions.php.orig:
+	* wp-admin/upgrade.php:
+	* wp-admin/upgrade.php.orig:
+	* wp-login.php:
+	* wp-login.php.orig:
+	* wp-moblog.php.orig:
+	* wp-register.php:
+	* wp-register.php.orig:
+		XOOPSモジュールに対応していないファイルを無効化。(Disabling files, can't use with XOOPS)
+
+	* attach/index.html:
+	* blocks/.htaccess:
+	* blocks/index.html:
+	* wp-includes/.htaccess:
+		不法アクセス対策追加
+
+	* wp-mail.php:
+		添付ファイルのContent-Type:が大文字を含む場合にうまくいかなかった
+
+2004-06-10  0.1.4
+	* wp-admin/auth.php:
+		XOOPSのユーザ名を変更したときにWordPress側のユーザ名も連動するように変更
+
+	* wp-includes/functions.php:
+		パスワード情報をXOOPSのユーザ情報から取得するように変更
+
+	* wp-admin/profile.php:
+		パスワード変更を出来ないようにした。（XOOPSのユーザ情報と同期するため）
+
+	* wp-admin/users.php:
+		新規ユーザ登録を出来ないようにした。（XOOPSのユーザと同期するため）
+
+	* wp-admin/post.php:
+		コメントを編集するとコメントの本文が消えるバグに対応
+
+	* blocks/wp_contents.php:
+		幾つかの細かいバグに対応
+
+	* xoops_search.php:
+		nao-ponさんのXOOPS search hackに対応。
+
+	* wp-login.php:
+	* wp-login.php.orig:
+	* wp-register.php:
+		This file is obsolete.
+
+2004-06-06  0.1.3a
+	* wp-mail.php:
+		ボーダフォンからの写真投稿に対応
+
+2004-06-06  0.1.3
+	* wp-mail.php:
+		画像添付のテキストメールや画像を埋め込んだHTMLメールに対応
+		(Get Image file from attached with a Text E-mail or embbeded with an HTML E-mail)
+		
+	* wp-moblog.php:
+	* wp-moblog.php.orig:
+		wp-mail.phpで画像投稿に対応したので、wp-moblog.phpはもはや不要
+		(This file is obsolete. because wp-mail.php can handle photo image, now.)
+
+	* wp-lang/lang_en.php:
+		英語のランゲージファイルに_LANG_WPF_SUBT_EDITが定義されていなかった。
+		(_LANG_WPF_SUBT_EDIT was not defined in English language file.)
+
+	* blocks/wp_recent_posts.php:
+		間違ったミスタイプ文字が混入していた。
+		(Illeagal character is mis-typed in the source)
+
+	* xoops_search.php:
+		検索結果のリンクURLが過剰にURLENCODEされていた。
+		(URL in Search Results  were encoded illeagally)
+
+2004-06-02  0.1.2
+	* admin/index.php:
+	* admin/menu.php:
+	* admin/myblocksadmin.php:
+	* admin/mygroupperm.php:
+	* admin/mygrouppermform.php:
+	* language/english/admin.php:
+	* language/japanese/admin.php:
+		myblocksadmin.phpを使用したブロック管理を追加
+
+	* wp-includes/template-functions.php:
+		RSSやRDF出力時に"&"等の文字が入っていると、不正な<descriptiion>を含むxmlを吐きだした。
+		(If blog content contains like "&" char, WordPress generated invalid formatted RSS).
+
+	* wp-admin/edit-form-advanced.php:
+		コメント設定のラジオボタンメッセージが間違っていた。(Invalid messages appearts at Comment
+		Status)
+
+	* wp-blog-header.php:
+		XOOPSのmailfile読込パスが間違っていた。(Invalid mailfile.php path was
+		specified)
+
+	* language/portugues.do.brasil/admin.php:
+	* language/portugues.do.brasil/index.html:
+	* language/portugues.do.brasil/main.php:
+	* language/portugues.do.brasil/modinfo.php:
+	* wp-lang/lang_pt_BR.php:
+		Brazilian Portuguese language files, translated by Yuji
+
+	* wp-admin/spaw/lib/lang/pt_BR/pt_BR_lang_data.inc.php:
+		Rename Brazilian Portuguese language file for SPAW ( br -> pt_BR)
+
+	* wp-admin/edit-comments.php:
+	* wp-admin/edit.php:
+		EDIT機能の検索機能の一部がRegister Global Offの状態でうまく動かなかった。
+		（Some search function are in trouble, when register global off)
+
+	* wp-images/search.png:
+	* xoops_search.php:
+		XOOPSの検索ブロックで検索を可能に。（Enable search with XOOPS search block)
+
+	* xoops_version.php:
+		ブロックの表示オプションを幾つか追加(Add some display options for XOOPS block)
+
+	* wp-includes/template-functions.php:
+		カレンダブロックで、前月又は次月が10-12月の時に文字化け
+
+	* wp-includes/functions.php:
+	* wp-mail.php:
+	* wp-moblog.php:
+		メール投稿時のデフォルトカテゴリー設定不具合に対応
+		（Fixed default category setting  for posting via E-mail)
+
+	* blocks/wp_categories.php:
+	* blocks/wp_contents.php:
+	* blocks/wp_recent_posts.php:
+		ブロックの表示オプションを幾つか追加
+
+2004-05-28  0.1.1
+	* wp-config-extra.php:
+	* wp-includes/vars.php:
+		XOOPS Smilies をXoopsのsmilesテーブルより取得
+
+	* wp-admin/edit-form-advanced.php:
+	* wp-admin/edit-form.php:
+	* wp-admin/quicktags.php:
+	* wp-admin/quicktags_spaw.js:
+	* wp-includes/vars.php:
+	* wp-settings.php:
+		XOOPS Smilies 表示Optionを追加
+
+	* wp-admin/post.php:
+		日本語タイトル記事の省略タイトルの命名に対応
+
+	* wp-includes/functions.php:
+	* wp-mail.php:
+	* wp-moblog.php:
+		メール投稿時のデフォルトカテゴリー設定不具合に対応
+		多言語対応
+
+	* blocks/wp_contents.php:
+	* index.php:
+	* language/english/main.php:
+	* language/english/modinfo.php:
+	* language/japanese/main.php:
+	* language/japanese/modinfo.php:
+	* wp-admin/edit.php:
+	* wp-comments-popup.php:
+		多言語対応
+
+	* xoops_install.php:
+		初期設定項目の最適化
+
+	* wp-admin/categories.php:
+	* wp-includes/links.php:
+		カテゴリの扱いを少し変更
+
+	* xoops_version.php:
+		XOOPS Smilies Option設定、ブロックのオプション設定を追加
+
+	* wp-blog-header.php:
+	* wp-includes/template-functions.php:
+		多言語対応
+		カテゴリーの扱いを少し変更
+
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_categories.php:
+		ブロックの表示オプションを幾つか追加
+
+	* wp-config-extra.php:
+		XOOPS Smilies 表示Optionを追加
+		多言語対応
+
+	* blocks/wp_calendar.php:
+	* blocks/wp_recent_comments.php:
+	* language/english/admin.php:
+	* language/english/main.php:
+	* language/english/modinfo.php:
+	* language/japanese/main.php:
+	* language/japanese/modinfo.php:
+	* sql/mysql.sql:
+	* wp-admin/auth.php:
+	* wp-admin/edit-form-advanced.php:
+	* wp-admin/edit-form-comment.php:
+	* wp-admin/edit-form.php:
+	* wp-admin/edit.php:
+	* wp-admin/link-manager.php:
+	* wp-admin/post.php:
+	* wp-admin/spaw/dialogs/img_library.php:
+	* wp-admin/spaw/lib/lang/ja/ja_lang_data.inc.php:
+	* wp-blog-header.php:
+	* wp-comments-post.php:
+	* wp-comments.php:
+	* wp-config-extra.php:
+	* wp-config.php:
+	* wp-includes/functions.php:
+	* wp-includes/kses.php:
+	* wp-includes/template-functions.php:
+	* wp-includes/vars.php:
+	* wp-mail.php:
+	* wp-moblog.php:
+	* wp-pass.php:
+	* wp-register.php:
+	* wp-settings.php:
+	* wp-trackback.php:
+	* xmlrpc.php:
+	* xoops_install.php:
+		First try to use in English
+
+	* xoops_version.php:
+		0.1.1 Release
+
+	* wp-admin/install-config.php:
+	* wp-admin/install-config.php.orig:
+	* wp-admin/install-helper.php:
+	* wp-admin/install-helper.php.orig:
+	* wp-admin/install.php:
+	* wp-admin/install.php.orig:
+	* wp-admin/wp-register.php:
+	* wp-admin/wp-register.php.orig:
+		Rename WordPress Original Installer(XOOPS Module dosen't use them)
+
+	* phpinfo.php:
+	* phpinfo.php.orig:
+		Rename phpinfo diagnostic PHP sctipt for security purpose.
+
+2004-05-23  0.0.2d
+	* wp-includes/functions.php:
+		PING送信時の接続タイムアウトを30秒に
+		コメント及びトラックバックのメール通知の時にBlogのcharsetがうまく取得できなかった。
+
+	* wp-admin/edit-form.php:
+		SPAW投稿がPHP4.3.x以降にしか対応していなかった。
+
+	* wp-admin/edit-form-advanced.php:
+		SPAW投稿がPHP4.3.x以降にしか対応していなかった。
+		高度な編集画面にも「ファイルアップロード」ボタンを表示
+
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+		一覧対象内容が0件の場合に、PHPがWarningを出力する。
+
+	* xmlrpc.php:
+		Blogのcharsetがうまく取得できていなかった
+
+	* wp-admin/wp-admin.css:
+		XOOPSと競合する一部のスタイルを無効に
+
+	* xoops_version.php:
+		匿名ユーザには、サブメニュー(投稿）を非表示に
+
+2004-05-19  0.0.2c
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_calendar.php:
+	* blocks/wp_categories.php:
+	* blocks/wp_contents.php:
+	* blocks/wp_links.php:
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+	* blocks/wp_search.php:
+		記事表示ブロックで、スマイリーマークやbbcodeなどの変換が出来ていなかった。
+
+	* header.php:
+	* wp-admin/admin-header.php:
+		タイトルバーに表示するタイトルの表記方法を若干修正
+
+	* wp-includes/functions.php:
+	* wp-trackback.php:
+		日本語を含まないblog名からのTrackバックで文字化けをおこしていた。
+		(TrackBack送信時にもcharsetが送れていなかった）
+
+2004-05-18  0.0.2b
+	* wp-admin/edit-form-comment.php:
+		textareaのIDがXOOPSの既定で使用しているIDと重複していたのを修正
+
+	* wp-mail.php:
+		HTMLメールのユーザー認証が、うまくいかない場合があったのに対応
+		メールのDateヘッダ及びサーバのTIMEZONEを元にして投稿日時を算出するように変更
+		オプション設定のemailtestonlyが有効に動作していなかったのを変更
+
+	* wp-admin/edit.php:
+	* wp-blog-header.php:
+		Edit画面で検索が出来ないケースがあった事への対応
+
+	* wp-admin/admin-header.php:
+		Titleにブログ名と管理画面の機能を表示
+
+	* xoops_version.php:
+		最近のコメントブロックの設定を管理画面にて可能に
+
+	* blocks/wp_recent_posts.php:
+		未来日付の投稿記事を表示しないように変更
+
+	* blocks/wp_recent_comments.php:
+		コメント表示の形式を２つ用意しブロック管理画面にて設定を可能に
+
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_calendar.php:
+	* blocks/wp_categories.php:
+	* blocks/wp_links.php:
+		余分なob_flushを削除
+
+	* wp-moblog.php:
+		メールのDateヘッダ及びサーバのTIMEZONEを元にして投稿日時を算出するように変更
+		オプション設定のemailtestonlyが有効に動作していなかったのを変更
+
+	* header.php:
+		Titleにブログ名と記事名などを表示
+
+	* wp-admin/quicktags.js:
+		textareaの名前変更に伴うfaceマーク挿入不具合対応
+
+2004-05-16  0.0.2a
+	* wp-mail.php
+	* wp-moblog.php
+		メールによる投稿時のパスワード確認をXOOPSのユーザ情報を利用するように変更
+	* wp-admin/upload.php
+		画像アップロード時に、ダイアログから「このコードを投稿フォームに挿入」ができなかった
+
+2004-05-14  0.0.2
+	* wp-config.php:
+	* wp-admin/edit-form-advanced.php:
+	* wp-admin/edit-form.php:
+	* wp-admin/post.php:
+	* wp-admin/quicktags_spaw.js:
+	* wp-admin/spaw/*:
+		IEでの記事入力編集時におけるSPAW対応
+
+	* wp-admin/bookmarklet.php:
+		SPAW使用時に、選択範囲の引用に元ページのHTMLを使用
+		引用元ページからTrackBackURLを自動検知
+
+	* admin/index.php:
+	* admin/menu.php:
+	* language/japanese/admin.php:
+	* language/japanese/modinfo.php:
+	* xoops_version.php:
+		XOOPS管理者メニューを追加し、以下のオプションを設定可能に
+		・SPAWコントロールの使用の可否（デフォルトは使用せず）
+		・XOOPSユーザの初期権限設定で編集権限をもつグループの指定
+		・XOOPSユーザの初期権限設定で管理権限をもつグループの指定
+
+	* wp-admin/auth.php:
+		XOOPS管理者メニューの設定内容による初期権限設定
+
+	* wp-config.php:
+		XOOPS管理者メニューの設定内容によるSPAW編集機能の仕様可否の設定
+
+	* wp-includes/functions.php:
+		XOOPS管理者メニューの設定内容の取得関数の追加
+
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_calendar.php:
+	* blocks/wp_categories.php:
+	* blocks/wp_contents.php:
+	* blocks/wp_links.php:
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+	* blocks/wp_search.php:
+		ブロック組合せ使用時の不具合対応
+
+	* logo.gif（削除）:
+	* wp-images/module_logo.png:
+	* xoops_version.php:
+		WordPressモジュールロゴ変更
+
+	* wp-admin/spaw/class/script.js.php:
+	* wp-admin/spaw/config/spaw_control.config.php:
+	* wp-admin/spaw/dialogs/img_library.php:
+		SPAWによる編集時の画像添付を、WordPressの画像アップロードとThumbnail作成方式に対応
+
+2004-05-09  0.0.1f
+	* blocks/wp_contents.php:
+		記事ブロック単独使用時の不具合対応
+		
+2004-05-07  0.0.1e
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+		記事ブロックと最新記事、最新コメント共存時の不具合に対応
+
+	* wp-admin/link-categories.php:
+		WordPress ME バグ修正
+		Submitボタンの名称を日本語化した事による不具合対応
+		
+2004-05-04  0.0.1d
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+		Block表示時の不具合対応
+
+	* xoops_version.php:
+		Contents Blockの定義を追加
+
+2004-05-04  0.0.1c
+	* sql/mysql.sql:
+	* xoops_install.php:
+		日本語文字列を含むmysql.sqlがうまく動作しないため、言語依存のSQLは、xoops_install.phpに移す。
+
+	* language/english/index.html:
+	* language/english/modinfo.php:
+	* language/japanese/index.html:
+	* language/japanese/modinfo.php:
+	* xoops_version.php:
+		xoops_version.phpの中の文字列をLanguageファイルを使用するように変更。
+
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_calendar.php:
+	* blocks/wp_categories.php:
+	* blocks/wp_links.php:
+	* blocks/wp_search.php:
+	* wp-blog-header.php:
+		Block表示時の不具合対応
+
+2004-05-03  0.0.1b
+	* sql/mysql.sql:
+		Create文がMySQL4..1以降にしか対応していなかった。
+
+	* wp-admin/edit-form-advanced.php:
+	* wp-admin/edit-form.php:
+		HTML要素名がXOOPSと重複してたのを修正。
+		投稿編集画面で、文字列を選択せずに、ツールバーのボタンを押した場合に動作しなかった。
+
+	* xoops_version.php:
+		バージョン番号を修正
+
+2004-05-02  0.0.1a
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_calendar.php:
+	* blocks/wp_categories.php:
+	* blocks/wp_links.php:
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+	* blocks/wp_search.php:
+		XOOPSモジュール化 ブロック単独使用時不具合対応
+
+	* wp-config.php:
+		XOOPSモジュール化リリース漏れ
+
+	* wp-includes/functions.php:
+		PINGサーバへのPINGBACK先の汎用化(wp-config.phpで設定を可能に)
+
+2004-05-01  0.0.1
+
+	* blocks/wp_archives_monthly.php:
+	* blocks/wp_calendar.php:
+	* blocks/wp_categories.php:
+	* blocks/wp_contents.php:
+	* blocks/wp_links.php:
+	* blocks/wp_recent_comments.php:
+	* blocks/wp_recent_posts.php:
+	* blocks/wp_search.php:
+	* header.php:
+	* index.php:
+	* logo.gif:
+	* sql/mysql.sql:
+	* templates/blocks/index.html:
+	* templates/blocks/wp_block_contents.html:
+	* templates/wp_dummy.html:
+	* weblogs.com.changes.cache:
+	* wp-admin/admin-footer.php:
+	* wp-admin/admin-header.php:
+	* wp-admin/auth.php:
+	* wp-admin/edit-form.php:
+	* wp-admin/menu.php:
+	* wp-admin/options-permalink.php:
+	* wp-admin/wp-admin.css:
+	* wp-blog-header.php:
+	* wp-config-extra.php:
+	* wp-config.php:
+	* wp-images/rdf.png:
+	* wp-images/rss.png:
+	* wp-includes/class-pop3.php:
+	* wp-includes/functions.php:
+	* wp-includes/template-functions.php:
+	* wp-includes/wp-db.php:
+	* wp-lang/lang_ja.php:
+	* wp-layout.css:
+	* wp-settings.php:
+	* wp-trackback.php:
+	* xoops_version.php:
+		XOOPSモジュール化
+
+	* sql/mysql.sql:
+	* xoops_install.php:
+	* xoops_version.php:
+		XOOPSモジュール化 自動インストール対応
+
+	* attach/index.html:
+	* wp-moblog.php:
+		Moblog写真対応＋日本語対応(WordPress 汎用)
+
+	* wp-mail.php:
+		Moblog日本語対応(WordPress 汎用)
+
+	* wp-includes/class-xmlrpc.php:
+	* wp-includes/class-xmlrpcs.php:
+	* wp-rsd.php:
+	* xmlrpc.php:
+		xmlrpc日本語化対応+bug fix(WordPress 汎用)

@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WordPress &rsaquo; ReadMe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css" media="screen">
+	<!--
+	html {
+		background: #eee;
+	}
+	body {
+		background: #fff;
+		color: #000;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		margin-left: 25%;
+		margin-right: 25%;
+		padding: .2em 2em;
+	}
+	
+	h1 {
+		color: #006;
+		font-size: 18px;
+		font-weight: lighter;
+	}
+	
+	h2 {
+		font-size: 16px;
+	}
+	
+	p, li, dt {
+		line-height: 140%;
+		padding-bottom: 2px;
+	}
+
+	ul, ol {
+		padding: 5px 5px 5px 20px;
+	}
+	-->
+	</style>
+</head>
+<body>
+<h1 style="text-align: center">
+<a href="./">
+<img alt="WordPress" src="./images/wordpress.gif"> <br>
+	Version 2.01 for XOOPS
+</a>	
+</h1>
+<p style="text-align: center"> Semantic Personal Publishing Platform </p>
+<h1>First Things First</h1>
+<p>Welcome. WordPress is a very special project to me. Every developer and contributor adds something unique to the mix, and together we create something beautiful that I'm proud to be a part of. Thousands of hours have gone into WordPress, and we're dedicated to making it better every day. Thank you for making it part of your world.</p>
+<p style="text-align: right;">&#8212; Matt Mullenweg </p>
+
+<h1>First Things Second</h1>
+<p>XOOPS is a Secure, Powerful, Flexible and Easy-to-use Content Management System. With the integration of the wonderful personal publishing system, XOOPS is becoming more favorable.</p>
+<p style="text-align: right;">&#8212; D.J. </p>
+
+<h1 id="installation">Installation: 5-minute install</h1>
+<ol>
+	<li>Unzip the package in an empty directory</li>
+	<li>Make your language package (if you are NOT using English): Find .mo file for you language at <a href="http://codex.wordpress.org/WordPress_in_Your_Language" target="_blank">WordPress codex</a>, put the .mo file under <code>wordpress/wp-includes/languages/</code></li>
+	<li>Upload the folder "wordpress" to <code>Your-Xoops-Root-Path/modules/</code></li>
+	<li>Edit <code>wordpress/include/xoops-wp.config.php</code>:<ul>
+		<li><code>define("WP_BLOG_CHARSET", 1);</code><br>You could choose XOOPS default charset or WordPress charset (0 for XOOPS; 1 for WordPress. Check <a href="http://xoopsforge.com/">XPress</a> for more infomation). XOOPS charset is used if leaving blank.</li>
+		</ul>
+	</li>
+	<li>Check files under <code>wordpress/language/YourLanguage/</code>. Make sure the two constant variables defined in each file:<ul>
+		<li><code>if(!defined('WP_LANG')){</code></li>
+		<li><code>define ('WP_LANG','<b>en_EN</b>');</code><br>Change "en_EN" to the name of your .mo file, such as "zh_CN" for Simplified Chinese.</li>
+		<li><code>define ('WP_MO_CHARSET','<b>utf-8</b>');</code><br>Change "utf-8" to the encoding charset for your .mo file, usually you do NOT need to change it.</li>
+		<li><code>}</code></li>
+		</ul>
+	</li>
+	<li>Install "wordpress" from your XOOPS => admin => Modules. </li>
+	<li>Set permissions, blocks and configs as a usual module</li>
+</ol>
+
+<h1>Upgrading</h1>
+<p>Before you upgrade anything, make sure you have backup copies of any files you may have modified such as <code>index.php</code>.</p>
+<h2>Upgrading from any previous WordPress to 2.0:</h2>
+<ol>
+	<li>Delete your old WP files, saving ones you've modified </li>
+	<li>Upload the new files</li>
+	<li>Update "wordpress" as a usual module</li>
+	<li>Set permissions, blocks and configs</li>
+	<li><strong>Clear cache/wordpress if your users are not allowed to submit blog</strong></li>
+	<li>That's it!</li>
+</ol>
+<h1>Online Resources</h1>
+<p>If you have any questions that aren't addressed in this document, please take advantage of the numerous online resources of WordPress and XOOPS:</p>
+<dl>
+	<dt><a href="http://codex.wordpress.org/">The WordPress Codex </a></dt>
+	<dd>The Codex is the encyclopedia of all things WordPress. It is the most comprehensive source of information for WordPress available. </dd>
+	<dt><a href="http://wordpress.org/development/">The Development Blog</a></dt>
+	<dd>This is where you'll find the latest updates and news related to WordPress. Bookmark and check often. </dd>
+	<dt><a href="http://planet.wordpress.org/">WordPress Planet </a></dt>
+	<dd>The WordPress Planet is a news aggregator that brings together posts from WordPress blogs around the web. </dd>
+	<dt><a href="http://wordpress.org/support/">WordPress Support Forums</a></dt>
+	<dd>If you've looked everywhere and still can't find an answer, the support forums are very active and have a large community ready to help. To help them help you be sure to use a descriptive thread title and describe your question in as much detail as possible. </dd>
+	<dt><a href="http://codex.wordpress.org/IRC">WordPress IRC Channel</a></dt>
+	<dd>Finally, there is an online chat channel that is used for discussion amoung people who use WordPress and occasionally support topics. The above wiki page should point you in the right direction. (irc.freenode.net #wordpresss) </dd>
+	<dt><a href="http://xoops.org/">The XOOPS Official Site</a></dt>
+	<dd>XOOPS is an extensible, OO (Object Oriented), easy to use dynamic web content management system written in PHP. XOOPS is the ideal tool for developing small to large dynamic community websites, intra company portals, corporate portals, weblogs and much more. </dd>
+	<dt><a href="http://devteam.xoops.org/">XOOPS Core Development</a></dt>
+	<dd>XOOPS core development site demonstrating the up-to-date XOOPS</dd>
+	<dt><a href="http://dev.xoops.org/">XOOPS Dev Forge</a></dt>
+	<dd>XOOPS module community site</dd>
+	<dt><a href="http://xoopsforge.com/">XForge</a></dt>
+	<dd>Dev Site for "WordPress for XOOPS", as well as other XOOPS modules</dd>
+</dl>
+
+<h1 id="requirements">System Recommendations</h1>
+<ul>
+	<li>PHP version <strong>4.1</strong> or higher</li>
+	<li>MySQL version <strong>3.23.23</strong> or higher</li>
+	<li>A link to <a href="http://wordpress.org">http://wordpress.org</a> on your site.</li>
+	<li>Promoting <a href="http://xoops.org">XOOPS</a> at your willness.</li>
+</ul>
+<p>WordPress is the official continuation of <a href="http://cafelog.com/">b2/caf&eacute;log</a>, which came from Michel V. The work has been continued by the <a href="http://wordpress.org/about/">WordPress developers</a>. If you would like to support WordPress, please consider <a href="http://wordpress.org/donate/">donating</a>. </p>
+
+<h1>Upgrading from another system</h1>
+<p>WordPress can <a href="http://codex.wordpress.org/Importing_from_other_blogging_software">import from a number of systems</a>. First you need to get WordPress installed and working as described above.</p>
+
+<h1 id="templates">XML-RPC Interface</h1>
+<p>You can now post to your WordPress blog with tools like <a href="http://ecto.kung-foo.tv/">Ecto</a>, <a href="http://blogbuddy.sourceforge.net">BlogBuddy</a>, <a href="http://bloggar.com/">Bloggar</a>, <a href="http://www.ubique.ch/wapblogger/">WapBlogger</a> (post from your Wap cellphone!), <a href="http://radio.userland.com">Radio Userland</a> (which means you can use Radio's email-to-blog feature), <a href="http://www.zempt.com/">Zempt</a>, <a href="http://www.newzcrawler.com/">NewzCrawler</a>, and other tools that support the Blogging APIs! :) You can read more about <a href="http://codex.wordpress.org/XML-RPC_Support">XML-RPC support on the Codex</a>.</p>
+
+<h1>Post via Email</h1>
+<p>You can post from an email client! To set this up go to your &quot;Writing&quot; options screen and fill in the connection details for your secret POP3 account. Then you need to set up <code>wp-mail.php</code> to execute periodically to check the mailbox for new posts. You can do it with Cron-jobs, or if your host doesn't support it you can look into the various website-monitoring services, and make them check your <code>wp-mail.php</code> URL. </p>
+<p> Posting is easy: Any email sent to the address you specify will be posted, with the subject as the title. It is best to keep the address dicrete. The script will <i>delete</i> emails that are successfully posted. </p>
+<h1 id="roles">User Roles </h1>
+
+<h1 id="notes">User Levels </h1>
+<p>"WordPress for XOOPS" is taking advantage of XOOPS' advanced permission management. You may set the permissions for user levels from admin area as a usual module.</p>
+
+<h1> Final notes</h1>
+<ul>
+	<li>If you have any suggestions, ideas, comments, or if you (gasp!) found a bug, join us in the <a href="http://wordpress.org/support/">Support Forums</a> or <a href="http://xoopsforge.com">XForge</a></li>
+	<li>WordPress now has a robust plugin API that makes extending the code easy. If you are a developer interested in utilizing this see the <a href="http://codex.wordpress.org/Plugin_API">plugin documentation in the Codex</a>. In most all cases you shouldn't modify any of the core code.</li>
+</ul>
+
+<h1>Share the Love</h1>
+<p>WordPress has no multi-million dollar marketing campaign or celebrity sponsors, but we do have something even better&#8212;you. 
+If you enjoy WordPress or XOOPS please consider telling a friend, setting it up for someone less knowledgable than yourself, or writing the author of a media article that overlooks us.</p>
+
+<h1>Copyright</h1>
+<p>Both WordPress and XOOPS, and XPress - "WordPress for XOOPS", are released under the <abbr title="GNU Public License">GPL</abbr> (see <a href="license.txt">license.txt</a>).</p>
+
+<h1>Note</h1>
+<p>The manual is modified by D.J. (phppp). Localized manuals will soon be available. You are welcome to submit translation for the manual to <a href="http://xoopsforge.com/modules/wordpress/">XPress</a>.</p>
+
+<h1>Acknowledgement</h1>
+<ul>
+<li>WordPress Development Team and plugin authors</li>
+<li>XOOPS Development Team</li>
+<li>XPress 2.0 contributors:
+	<ul>
+		<li>A.D.Horse, http://www.tv-io.com/</li>
+		<li>famaTV, http://www.famatv.net/</li>
+		<li>ffxk, http://ffxk.com/modules/wordpress/</li>
+		<li>Herko, http://www.herkocoomans.net/</li>
+		<li>studioC (Michael), http://xoopsfactory.com/blog/</li>
+		<li>Todd, http://www.hotdogblog.com/,  http://www.idolnotes.com/</li>
+		<li>...</li>
+	</ul>
+	</li>
+</ul>
+
+<h1>Submit your blog</h1>
+<p>We are building a blog planet for XPress and you are welcome to join us at <a href="http://xoopsforge.com/modules/planet/">Xoop Planet</a>.</p>
+
+<h1><p align="right"><img src="./images/wordpress.png" alt="WordPress for XOOPS"></p></h1>
+
+</body>
+</html>

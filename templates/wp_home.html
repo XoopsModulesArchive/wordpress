@@ -1,0 +1,65 @@
+<table>
+
+<tr>
+	<{if $wp_content.show_inline_sidebar}>
+	<td colspan="3">
+	<{else}>
+	<td>
+	<{/if}>
+		<div id="wp-header">
+			<{includeq file="db:wp_header.html"}>
+		</div>
+	</td>
+</tr>
+
+<tr>
+	<{if $wp_content.show_inline_sidebar}>
+	<td colspan="3" class="wp-delimiter-horizontal">
+	<{else}>
+	<td class="wp-delimiter-horizontal">
+	<{/if}>
+	&nbsp;
+	</td>
+</tr>
+
+<tr>
+	<{if $wp_content.show_inline_sidebar}>
+	<td class="wp_sidebar">
+		<div id="wp-sidebar">
+		<{includeq file="db:wp_sidebar.html" wp_content=$wp_content}>
+		</div>
+	</td>
+	<td class="wp-delimiter-vertical"> &nbsp; </td>
+	<{/if}>
+	<td>
+		<div id="wp-content">
+			<div style="margin: 15px;"><h2><{$smarty.const._MD_WORDPRESS_RECENT_AUTHORS}></h2></div>
+			<{foreach item=author from=$authors.list}>
+			<div style="margin: 10px 10px;">
+				<{if $author.image}>
+				<div style="float: left; font-size: small; margin: 0px 10px 10px 0px;">
+					<a href="<{$author.link}>">
+						<img src="<{$author.image}>" alt="<{$author.name}>" width="80px">
+					</a>
+				</div>
+				<{/if}>
+				<div style="margin-bottom:5px; font-weight: bold;">
+					<h3><a href="<{$author.link}>"><{$author.name}></a></h3>
+				</div>
+				<div><{$author.desc}></div>
+				<div style="margin: 5px 0;">
+					<{$smarty.const._MD_WORDPRESS_COUNT_POSTS}><a href="<{$author.link}>"><{$author.count}></a> | <{$smarty.const._MD_WORDPRESS_LASTPOST}><a href="<{$author.link}>"><{$author.last}></a>
+				</div>
+				<br style="clear: both;">
+			</div>
+			<{/foreach}>
+			</div>
+			
+			<div class="wp-page-nav">
+				<{$authors.pagenav}>
+			</div>
+		</div>
+	</td>
+</tr>
+
+</table>

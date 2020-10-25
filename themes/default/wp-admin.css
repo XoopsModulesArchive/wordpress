@@ -1,0 +1,332 @@
+* html #poststuff {
+	height: 100%; /* kill peekaboo bug in IE */
+}
+
+#wpAdminMain a img {
+	border: none;
+}
+
+#wpAdminMain a.delete:hover {
+	background: #c00;
+	color: #fff;
+}
+
+#wpAdminMain a.edit,#wpAdminMain  a.delete,#wpAdminMain  a.edit:hover,#wpAdminMain  a.delete:hover {
+	border-bottom: none;
+	display: block;
+	padding: 5px 0;
+	text-align: center;
+}
+
+#wpAdminMain a.edit:hover {
+	background: #ccc;
+	color: #036;
+}
+
+#wpAdminMain fieldset {
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+
+#wpAdminMain fieldset label.selectit {
+	background: #f0f0f0;
+	display: block;
+	font-size: 11px;
+	padding: 0 2px;
+}
+
+#wpAdminMain fieldset label.selectit:hover {
+	background: #dadada;
+}
+
+#wpAdminMain fieldset legend {
+	padding: .1em;
+}
+
+#wpAdminMain fieldset:hover {
+	border: 1px solid #999;
+}
+
+#wpAdminMain form,#wpAdminMain  label input {
+	margin: 0;
+	padding: 0;
+}
+
+#wpAdminMain h2 {
+	color: #0080C0;
+	margin: 15px 10px;
+}
+
+#wpAdminMain label {
+	cursor: pointer;
+}
+
+#wpAdminMain .alternate {
+	background: #eee;
+}
+
+#wpAdminMain .anchors {
+	margin: 10px 20px 10px 20px;
+}
+
+#wpAdminMain .checkbox {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#wpAdminMain .post-categories {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#wpAdminMain .post-categories li,#wpAdminMain  #ed_toolbar {
+	display: inline;
+}
+
+#wpAdminMain .quicktags,#wpAdminMain  .search {
+	background: #ccc;
+	color: #000;
+	font: 12px "ƒqƒ‰ƒMƒmŠpƒS Pro W3", Osaka, Verdana, "‚l‚r ‚oƒSƒVƒbƒN", sans-serif;
+}
+
+#wpAdminMain .unapproved {
+	color: #888;
+}
+
+#wpAdminMain .unapproved a:link {
+	color: #b9bcff;
+}
+
+#wpAdminMain .unapproved a:visited {
+	color: #696dff;
+}
+
+#wpAdminMain .unapproved a:hover {
+	color: #009ef0;
+}
+
+#wpAdminMain .wrap {
+	border: 1px solid #0080C0;
+	background: #F2F8F9;
+	margin: 20px auto 10px auto;
+	padding: 17px 10px 17px 10px;
+	width: 98%;
+}
+
+#wpAdminMain .wrap h2 {
+	font-size: 18px;
+	margin: 6px 0;
+}
+
+#wpAdminMain #adminmenu {
+	margin-left: 7px;
+	padding: 0 2px;
+}
+
+#wpAdminMain #adminmenu a {
+	background-color: #336699;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: helvetica,arial,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 0.4em;
+	border-top: 1px solid #cecece;
+	border-bottom: 2px solid #4a4a4a;
+	border-left: 1px solid #cecece;
+	border-right: 2px solid #4a4a4a;
+}
+
+#wpAdminMain #adminmenu a:hover {
+	border-bottom: 1px solid #cecece;
+	border-top: 2px solid #4a4a4a;
+	border-right: 1px solid #cecece;
+	border-left: 2px solid #4a4a4a;
+}
+
+#wpAdminMain #adminmenu .current,#wpAdminMain #adminmenu a.current:hover {
+	background-color: #996633;
+	border-top: 1px solid #cecece;
+	border-bottom: 2px solid #4a4a4a;
+	border-left: 1px solid #cecece;
+	border-right: 2px solid #4a4a4a;
+}
+
+#wpAdminMain #adminmenu2 {
+	border-bottom: none;
+	margin-left: 7px;
+}
+
+#wpAdminMain #adminmenu2 a {
+	background-color: #66AABB;
+	border-top: 1px solid #cecece;
+	border-bottom: 2px solid #2a2a2a;
+	border-left: 1px solid #cecece;
+	border-right: 2px solid #2a2a2a;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: helvetica,arial,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 0.4em;
+	margin: 0;
+	padding: 1px 5px;
+	text-decoration: none;
+}
+
+#wpAdminMain #adminmenu2 a:hover {
+	border-bottom: 1px solid #cecece;
+	border-top: 2px solid #4a4a4a;
+	border-right: 1px solid #cecece;
+	border-left: 2px solid #4a4a4a;
+}
+
+#wpAdminMain #adminmenu2 .current,#wpAdminMain #adminmenu2 a.current:hover {
+	background-color: #CC9966;
+	border-top: 1px solid #cecece;
+	border-bottom: 2px solid #2a2a2a;
+	border-left: 1px solid #cecece;
+	border-right: 2px solid #2a2a2a;
+}
+
+#wpAdminMain #adminmenu li,#wpAdminMain  #adminmenu2 li {
+	display: inline;
+	line-height: 2.0em;
+	list-style: none;
+	text-align: center;
+}
+
+#wpAdminMain #adminmenu .last,#wpAdminMain  #adminmenu2 .last {
+	border-right: none;
+}
+
+#wpAdminMain #categorydiv {
+	line-height: 120%;
+	width: 15em;
+	float: left;
+}
+
+#wpAdminMain #categorydiv input,#wpAdminMain #poststatusdiv input,#wpAdminMain #commentstatusdiv input, #wpAdminMain #pingstatusdiv input {
+	border: none;
+}
+
+#wpAdminMain #ed_button {
+	padding: 1px;
+}
+
+#wpAdminMain #ed_del {
+	text-decoration: line-through;
+}
+
+#wpAdminMain #ed_em {
+	font-style: italic;
+	width: 25px;
+}
+
+#wpAdminMain #ed_strong {
+	font-weight: bold;
+	width: 25px;
+}
+
+#wpAdminMain #login {
+	background: url(../../wp-images/wp-small.png) #fff no-repeat top center;
+	border: 1px solid #dcdcdc;
+	color: #333;
+	height: 190px;
+	left: 50%;
+	margin-left: -120px; /* half of width and height */
+	margin-top: -85px;
+	padding: 60px 8px 8px 8px;
+	position: absolute;
+	text-align: right;
+	top: 45%;
+	width: 250px;
+}
+
+#wpAdminMain #login textarea,#wpAdminMain  #login input,#wpAdminMain  #login select {
+	background: #f7f7f7;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+	margin: 1px;
+	padding: 2px;
+}
+
+#wpAdminMain #metainfo {
+	clear: both;
+}
+
+#wpAdminMain #postdiv {
+    clear: both;
+}
+
+#wpAdminMain #poststatusdiv, #wpAdminMain #commentstatusdiv, #wpAdminMain #pingstatusdiv {
+	width: 9em;
+}
+
+#wpAdminMain #poststuff {
+	margin-right: 0.5em;
+}
+
+#wpAdminMain #poststuff textarea {
+	width: 99%;
+}
+
+#wpAdminMain #profile {
+	margin: 10px;
+}
+
+#wpAdminMain #profile .left {
+	border-right: 1px dashed #ccc;
+	float: left;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+
+#wpAdminMain #profile label {
+	float: left;
+	padding-right: 3px;
+	text-align: right;
+	width: 85px;
+}
+
+#wpAdminMain #profile p {
+	margin: 0 0 4px 0;
+}
+
+#wpAdminMain #quicktags {
+	text-align: left;
+}
+
+#wpAdminMain #titlediv, #wpAdminMain #poststatusdiv, #wpAdminMain #commentstatusdiv, #wpAdminMain #pingstatusdiv, #wpAdminMain #postpassworddiv, #wpAdminMain #namediv, #wpAdminMain #uridiv, #wpAdminMain #emaildiv {
+
+	float: left;
+	height: 6em;
+	margin-right: 2px;
+}
+
+#wpAdminMain #wphead {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+#wpAdminMain #wphead a {
+	background: url(../../wp-images/wordpress.gif) no-repeat;
+	border-bottom: none;
+	display: block;
+	height: 50px;
+	line-height: 30px;
+	margin: 3px 0 0 5px;
+	text-decoration: none;
+}
+#wpAdminMain #wphead a span {
+	display: none;
+}
+
+#wpAdminMain fieldset span.cat-nest {
+	display: block;
+	margin-left: 10px;
+}

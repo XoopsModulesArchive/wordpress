@@ -1,0 +1,188 @@
+Description: 
+WordPress XOOPS port is released.
+
+It's based on "WordPress 1.0.2" and "WordPress ME 1.0.3" (Multi Language Edition for Japanese)
+From Release0.3.0, some new functions in WordPress1.2 are added.
+
+There currently is not any English documentation for this module. If you know about the original WordPress, you will be able to use this module easily. If you don't, please see the documents on the WordPress Homepage.
+
+Features:
+Can post a blog with spaw editor 
+Can specify special ping server 
+Can use following XOOPS blocks:
+-WordPress Calendar
+-WordPress Monthly Archives
+-WordPress Categories Listing
+-WordPress Link Listing
+-WordPress Blog Search
+-WordPress Recent Posts
+-WordPress Recent Comments
+-WordPress Contents
+
+System Requirements:
+To install this module, you don't need to run install.php, like WordPress needs it. All you have to do is, copy all files into your XOOPS Module directory and execute XOOPS module install menu as normal. 
+With some release prior to Release 0.2.1, Trackback receiveing will fail, if you don't have mb_string extension. Please update with new Release. 
+
+From WordPress Release0.2.0, Directory strucure is changed a little.
+
+XOOPS_ROOT_PATH
+ |
+ +-modules
+    |
+    :
+    +-wordpress
+    |  |
+    |  :
+    |  +- themes
+    |      |
+    |      +- default
+    |      |   |
+    |      |   +- index-template.php
+    |      |   +  content_block-template.php
+    |      |   +- comments-template.php
+    |      |   +  content_block-template.php
+    |      |   +- wp-layout.css
+    |      |   +- print.css
+    |      |   +- wp-admin.css
+    |      |   +- wp-blocks.css.php
+    |      |   +- wp-config-custom.php
+    |      |
+    |      +- Xoops Theme Name
+    |      :   |
+    :      :   :
+    :
+    +-wordpress0
+    :
+    +-wordpress1
+
+------------
+ChangeLog
+------------
+0.3.3  [2004-10-24]
+Added Features)
+-Add Option to Recent Comment Block
+  Posted Date On/Off
+  Comment Type(Comment,Trackback,Pingback) On/Off
+-With SPAW Editor, you can get an image from XOOPS Image Manager and MyAlbum Module(by GIJOE)
+-Blog posted with no title will be displayed as "(No Title)"
+-Add some style class in listing blocks.
+  Please refer themes/default/wp-blocks.css.php, if you customized your block stylesheet.
+
+Fixed Bugs)
+-Some bugs in Moblog function
+-Some bugs relate with PukiWiki plugin is fixed
+-Some function didn't sanitize some GET paramaters.
+-Some trouble with multiple blog with some plugins.
+
+0.3.2  [2004-09-05]
+-Could not post with Apple-Mail
+-Some bugs relate with PukiWiki plugin is fixed
+-Comment popup function option is fixed
+-PHP short tags were in some sources.(Thanks tohokuaiki!)
+-Attempt to simulate permalink function without Apache mod_rewrite
+-Some Japanese specific issues.
+-Delete following deprecated files
+	b2rdf.php, b2rss.php, b2rss2.php, phpinfo.php.orig, wp-admin/change-functions.php, 
+	wp-admin/change-functions.php.orig, wp-admin/change.php, wp-admin/change.php.orig, 
+	wp-admin/install-config.php, wp-admin/install-config.php.orig, wp-admin/install-helper.php, 
+	wp-admin/install-helper.php.orig, wp-admin/install.php, wp-admin/install.php.orig, 
+	wp-admin/templates.php, wp-admin/templates.php.orig, wp-admin/upgrade-functions.php, 
+	wp-admin/upgrade-functions.php.orig, wp-admin/upgrade.php, wp-admin/upgrade.php.orig,
+	wp-config-sample.php, wp-login.php, wp-login.php.orig, wp-moblog.php.orig,
+	wp-register.php, wp-register.php.orig, 
+
+0.3.1  [2004-08-23]
+Added Features)
+-Add PukiWiki rendering plugin (PukiWiki is Japanese major Wiki Engine)
+-Add Viewer for Japanese mobile phone.
+-Add migration tool for MovableType
+
+Fixed Bugs)
+-Some trouble with rendering plugin.
+-Some trouble with multiple blog.
+-Some source starts with <? not <?php
+-<li></li>tag in some XOPPS blocks were not enclosed with <ul></ul>tag.
+
+0.3.0  [2004-08-02]
+Added Features)
+-Add some features from WordPress1.2
+  Enable to use WordPress Plugins (Some plugin needs to be modified when it use DB access)
+  Enhanced PermaLink (You must re-generate .htaccess)
+  Hierarchical category (experimental)
+  Filter by author
+-Add Authors XOOPS block
+-Add Option to Recent Post Block
+  Filter by category
+  New! marking
+-Enhanced Xoops Block management function.
+  Block cloning.(Thanks GIJOE)
+-Add Module Icons for eace cloned modules.
+-Enable to down Level 10 User's level.
+
+Fixed Bugs)
+-Some Trouble when use cloned modules.
+-Some JavaScript trouble in admin functions.
+
+0.2.3  [2004-07-20]
+Fixed Bugs)
+-Could not change Month with calendar block.
+-Some odd action in category block.
+-Could not edit comment message.
+-Could not Install on German environment
+-Re-enable User deleting function
+
+0.2.2  [2004-07-08]
+Fixed Bugs)
+-Can't Receive Trackback, if PHP mbstring extension is not installed.
+-RSS2 ICON is displayed as RSS0.92 ICON
+-RSS charset is forced to UTF-8 under ISO8859-1 charset environment, if PHP mbstring extention is installed,
+
+0.2.1  [2004-07-04]
+Added Features)
+-RSS ICON can display in XOOPS Block
+-German Language files are added by Joker (http://localfoo.info/)
+
+0.2.0  [2004-06-26]
+Added Features)
+-WordPress Module can be cloned.
+ (If you want to use another WordPress, copy the directory of wordpress into wordpress[0-9] entirely.)
+-WordPress Templates and Stylesheets can be customized synchronising with XOOPS Theme..
+
+0.1.4  [2004-06-10]
+Added Features)
+-If XOOPS user name is  changed , WordPress user name will be synchronized.
+-Registering new user function in WordPress is deleted.
+-Changing user password function in WordPress is deleted.
+
+Fixed Bugs)
+-The comment content was deleted, if user edits comment.
+-User synchronization between XOOPS & WordPress function had bugs.
+
+0.1.3a[2004-06-09]
+Fixed Bugs)
+-Some phone could not send a photo.
+
+0.1.3 [2004-06-06]
+Added Features)
+-When using Blog-by-Email, It can get image files from attached with a Text E-mail and embbeded with an HTML E-mail.
+
+Fixed Bugs)
+-_LANG_WPF_SUBT_EDIT was not defined in English language file.
+-Illeagal character is mis-typed in the "Recent Posts" block source.
+-URL string in Xoops search results were encoded illeagally.
+
+0.1.2 [2004-06-02]
+Added Features)
+-Added Block admin menu with myblocksadmin.php
+-Added some display options for XOOPS blocks
+-Enable searching with XOOPS search block
+-Brazilian Portuguese language files are added.(Translated by Yuji. Thanks!!)
+
+Fixed Bugs)
+-Default category setting for posting via E-mail
+-Some searching function in a Edit screen were in trouble, when register global off.
+-If blog content contains like "&" char, WordPress generated invalid formatted RSS
+-Invalid messages appeared at comment status selection radio button.
+
+0.1.1 [2004-05-29]
+First release that can be used in an English environment.

@@ -1,0 +1,152 @@
+div#wp-header {
+	padding: 5px;
+}
+
+#wp-header .wp-title{
+	clear: both;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+#wp-header .wp-description{
+	padding: 5px;
+	float: left;
+	text-align: left;
+}
+
+#wp-header .wp-navigation{
+	padding: 5px;
+	float: right;
+	text-align: right;
+}
+
+#wp-sidebar{
+	padding: 5px 2px;
+	float: left;
+}
+
+#wp-sidebar .sidebar-item { 
+	padding-top: 15px; 
+}
+
+#wp-sidebar ul li {
+	list-style: disc outside;
+	}
+
+#wp-sidebar ul li {
+	padding-left: 15px;
+	margin: 2px 0 0 10px;
+	padding: 0;
+	}
+
+#wp-sidebar ul ul li {
+	margin-left: 15px;
+	}
+
+#wp-sidebar ul.sidebar-link li h2 {
+	font-size: 100%;
+	padding: 0px;
+	margin: 2px;
+	}
+
+#wp-sidebar ul.sidebar-link li {
+	list-style-type: none;
+	}
+
+#wp-sidebar ul.sidebar-link ul li {
+	list-style: disc outside;
+	margin-left: 0px;
+	}
+
+#wp-sidebar .sidebar-item .author-title{
+	font-weight: bold;
+	font-size: 130%;
+	padding: 5px 2px;
+	text-align: center;
+}
+
+#wp-sidebar .sidebar-item .author-description{
+	font-size: 100%;
+	padding: 5px;
+}
+
+#wp-sidebar .sidebar-item .sidebar-title{
+	font-weight: bold;
+	font-size: 120%;
+	border-bottom: #aaa dotted 1px;
+	margin: 5px 0px;
+}
+
+#wp-content{
+	padding: 10px;
+}
+
+#wp-content .commentlist ol { 
+	list-style: decimal outside;
+}
+
+#wp-content .commentlist li { 
+	list-style: decimal outside;
+}
+
+#wp-content .wp-post{
+	padding: 5px;
+}
+
+#wp-content .wp-post-nav{
+	font-size: 90%;
+	padding: 5px;
+}
+
+#wp-content .wp-page-nav{
+	font-size: 90%;
+	padding: 5px;
+}
+
+#wp-content .wp-post-nav div.alignleft{
+	float: left;
+	text-align: left;
+	padding-right: 2px;
+}
+
+#wp-content .wp-post-nav div.alignright{
+	float: right;
+	text-align: right;
+	padding-left: 2px;
+}
+
+
+#wp-content .wp-post-title{
+	font-size: 140%;
+	padding: 10px 2px;
+	margin-top: 10px;
+}
+
+#wp-content .wp-post-meta{
+	font-size: 90%;
+}
+
+#wp-content .wp-post-entry{
+	padding: 5px 2px;
+}
+
+/* To override the comment style */
+#wp-content h3#comments, #wp-content h3#respond{
+	font-size: 110%;
+}
+
+td.wp_sidebar {
+	width: 170px;
+}
+
+td.wp-delimiter-vertical {
+	font-size: 1%;
+	border-right: 1px solid #aaa;
+	width: 1px;
+}
+
+td.wp-delimiter-horizontal {
+	font-size: 1%;
+	border-bottom: 1px solid #aaa;
+	height: 1px;
+}

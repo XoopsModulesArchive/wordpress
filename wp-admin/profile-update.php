@@ -1,0 +1,35 @@
+<?php
+
+require_once __DIR__ . '/admin.php';
+
+check_admin_referer('update-profile_' . $user_ID);
+
+if (!$_POST) {
+    die(__('No post?'));
+}
+
+$errors = edit_user($user_ID);
+
+if (0 != count($errors)) {
+    foreach ($errors as $id => $error) {
+        echo $error . '<br>';
+    }
+
+    exit;
+}
+
+if (!isset($_POST['rich_editing'])) {
+    $_POST['rich_editing'] = 'false';
+}
+update_user_option($current_user->id, 'rich_editing', $_POST['rich_editing'], true);
+
+do_action('personal_options_update');
+
+if ('profile' == $_POST['from']) {
+    $to = 'profile.php?updated=true';
+} else {
+    $to = 'profile.php?updated=true';
+}
+
+wp_redirect($to);
+exit;

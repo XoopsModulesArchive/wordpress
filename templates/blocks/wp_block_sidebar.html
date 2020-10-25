@@ -1,0 +1,18 @@
+<style type="text/css">
+#wordpress_sidebar div.sidetitle{
+	padding: 1em 0 0 0;
+}
+</style>
+<div id="wordpress_sidebar">
+	<{if $block.cats}><div class="sidetitle"><{$smarty.const._MB_WORDPRESS_CATS}></div><ul><{$block.cats}></ul>
+	<{/if}>
+	<{if $block.pages}><ul><{$block.pages}></ul>
+	<{/if}>
+	<{if $block.archives}><div class="sidetitle"><{$smarty.const._MB_WORDPRESS_ARCHIVES}></div><ul><{$block.archives}></ul>
+	<{/if}>
+	<{if $block.links}><div class="sidetitle"><{$smarty.const._MB_WORDPRESS_LINKS}></div><ul><{$block.links}></ul>
+	<{/if}>
+	<{if $block.meta}><div class="sidetitle"><{$smarty.const._MB_WORDPRESS_META}></div><ul><{$block.meta}></ul>
+	<{/if}>
+	<div class="sidetitle"><img src="<{$block.siteurl}>/images/external.png" alt=""> <{$smarty.const._MB_WORDPRESS_MENU}></div><ul><{$block.op}></ul>
+</div>

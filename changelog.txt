@@ -1,0 +1,124 @@
+Changelog 
+
+
+Changelog 2.03
+===============================================================================
+June 4th, 2006
+1 Upgrade to WordPress 2.03
+2 Change blocks for performance improvement
+
+
+Changelog 2.02
+===============================================================================
+Mar 23th
+Upgrade to WordPress 2.02
+
+Changelog 2.01 Fix 3
+===============================================================================
+Mar 12th
+Bugfix for missing username encoding conversion
+
+Changelog 2.01 Fix 2
+===============================================================================
+Mar 2nd
+Bugfix for user role cache
+Added permission set on install
+Added post-specific pagetitle
+
+Changelog 2.01 Fix 1
+===============================================================================
+Feb 20th
+Skip user cache
+Skip author override
+
+Changelog 2.01
+===============================================================================
+Feb 14th
+
+Update to WordPress 2.01
+
+===============================================================================
+Changelog 2.0 XOOPS
+Jan 29th, 2006 
+=============
+Compatible with XOOPS 2.0, 2.2, 2.3
+
+===============================================================================
+XPress 2.0
+Jan 25th, 2006
+
+1 Updated to WordPress 2.0
+2 Added block for recent blogs with content
+
+WordPress files modified for XPress integration:
+1 wp-login.php
+  redirect to XOOPS login page
+2 wp-register.php
+  redirect to XOOPS register page
+3 wp-rss2.php
+  Added excerpt for RSS (a bug?) 
+4 wp-settings.php
+  Insert line calling xoops-wp.php (the core kernel)
+5 wp-trackback.php
+  added charset encoding conversion
+6 wp-admin/admin-footer.php
+  added link target, added link to XPress dev site
+7 wp-admin/index.php
+  added RSS feeds for XOOPS and XPress
+8 wp-content/themes/classic/comments.php
+  added output for flickr plugin
+9 wp-content/themes/classic/sidebar.php
+  added XOOPS link and style switch link
+10 wp-content/themes/default/achive.php
+  Modified links and content display
+11 wp-content/themes/default/comments.php
+  added output for flickr plugin
+12 wp-content/themes/default/footer.php
+  Modified links
+13 wp-content/themes/default/header.php
+  Added RSS feed links
+14 wp-content/themes/default/index.php
+  Modified links
+15 wp-content/themes/default/sidebar.php
+  added XOOPS link and style switch link
+16 wp-content/themes/default/single.php
+  Modified link
+17 wp-includes/functions.php
+  Fixed date format bug, added charset encoding conversion for RSS feed and trackback
+18 wp-includes/functions-post.php
+  Disabled wp_upload_dir function to use customized function to use XOOPS upload dir
+19 wp-includes/template-functions-general.php
+  Fixed bug in calendar language
+20 wp-includes/wp-db.php
+  Redirect db connect to XOOPS
+21 wp-includes/wp-l10n.php
+  Added charset encoding conversion
+22 wp-includes/js/quicktag.js
+  Added tags for "tag"
+  
+  
+===============================================================================
+XPress 1.5.2 (Moon)
+Sep 05th, 2005
+
+1 Removed unused template
+2 Added module theme selection which allows WordPress has its own theme
+3 Added user information with Xoops userinfo
+4 Fixed bug in admin user data on installation
+5 Added(Rollback) encoding conversion for ping, trackback and comment
+6 Added module header (RSS alert)
+7 Fixed language problems in case WP blocks are used outside of WordPress module (reported by Latitudes, http://geekgrl.net/)
+8 Added hierarchical structure and post count to categories in sidebar
+
+Note:
+Before Xoops 2.23 RC1, WordPress for Xoops can only be installed after the system installation is completely finished.
+Since Xoops 2.23 final, it is possible to install WP during system installation as other modules, like pm, profile
+
+===============================================================================
+XPress 1.5.2
+Aug 18, 2005
+
+1 update WordPress to 1.5.2
+2 add userinfo link for comment poster if logged on
+3 add xoops decode to wp content and comment
+4 remove accept-charset in form tag which is not compatible for all browsers

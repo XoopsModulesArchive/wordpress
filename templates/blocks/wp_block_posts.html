@@ -1,0 +1,13 @@
+<{foreach item=post from=$block}>
+<div style="padding: 2px;">
+<span style="float: left;"><a href="<{$post.link}>" rel="bookmark" title="<{$post.title}>"><{$post.title}></a>
+<{if $post.new eq "red"}><em style="color: red; font-size: small;"><{$smarty.const._MB_WORDPRESS_REDNEW_TEXT}></em>
+<{elseif $post.net eq "green"}><em style="color: green; font-size: small;"><{$smarty.const._MB_WORDPRESS_GREENNEW_TEXT}></em>
+<{/if}> 
+</span>
+<span style="float: right;">
+<{$post.author}>
+</span>
+<br style="clear:both;">
+</div>
+<{/foreach}>

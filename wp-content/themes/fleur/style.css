@@ -1,0 +1,423 @@
+/* 
+Template: fleur
+Theme Name: Fleur De Lys
+Theme URI: http://wpthemes.info
+Author: Sadish Balasubramanian
+Author URI: http://www.simpleinside.com
+*/
+/* General Styles */
+
+body {
+	color: #333;
+	font-family: Trebuchet MS, Georgia, 'Times New Roman', serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 90%;
+	background:#F2F2E9 url('img/shadow_background.jpg') repeat-y center;
+}
+hr, .description 
+{
+	display:none;
+}
+a:link {
+  color:#AA7D39;
+  text-decoration:none;
+  }
+a:visited {
+  color:#B3A99A; /*B8A280;*/
+  text-decoration:none;
+  }
+a:hover {
+  color:#9C803A;
+  text-decoration:underline;
+  }
+a img {
+  border-width:0;
+  }
+a img {	border:none;}
+
+
+#rap {
+  width: 760px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+	background: #fff;
+	padding: 0;	
+	background:#fff url('img/rap.jpg') repeat-y left;
+}
+acronym, abbr {
+	border-bottom: 1px dotted #9C803A;
+}
+
+acronym, abbr, span.caps {
+	cursor: help;
+	letter-spacing: .07em;
+}
+
+code {
+  font-size: 1em;
+  font-style:italic;
+}
+
+blockquote {
+	border-left: 5px solid #DADACE;
+	margin-left: 1.5em;
+	padding-left: 5px;
+}
+
+cite {
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.3em;
+	font-family: verdana, helvetica, sans-serif;
+	font-weight: normal;
+}
+
+p {
+	margin: 0 0 1em 0;
+	padding: 0;
+	line-height: 1.2em;
+	font-size: 1.1em;
+}
+
+/* Header Styles */
+
+#header 
+{
+	margin: 0;
+	padding: 5px 15px;	
+	height: 160px;
+	text-align: center;
+	text-transform: uppercase;	
+	background:url('img/fdl_top.jpg') repeat top;
+}
+
+#header h1 {
+  margin: 30px auto 5px auto;
+	padding: 50px 0 0 0;
+	font-size: 1.5em;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	text-align:right;
+	font-family:Georgia, Verdana, Arial, Sans-Serif;
+}
+
+
+#header h1 a {
+	text-decoration: none;
+	border:none;
+	color:#ddd;
+	}
+#header h1 a:hover,#header h1 a:active {
+	text-decoration: none;
+	color:#fff;
+	}
+
+/* Content Styles */
+
+#content 
+{
+	float: right;
+	margin:20px 0;
+	padding:0 5px;
+	background: #fff;
+	width: 510px;
+	font-size: 0.9em;
+	display:inline;
+}
+
+.post {
+  margin: 0 0 2em 0;	
+}
+#content ol 
+{
+	font-size:1.1em;
+	margin:5px 0 5px 20px;
+	padding:0 0 0 20px;
+}
+#content ol li
+{
+	margin:0;
+	padding:2px;
+	margin:5px 0 5px 18px;
+}
+#content ul 
+{
+	font-size:1.1em;
+	list-style:none;
+	margin:5px 0 5px 20px;
+	padding:0 0 0 20px;
+}
+#content ul li 
+{
+	list-style:none;
+	background:url(img/fdl_icon.gif) no-repeat left center;
+	padding:2px 0 2px 18px;
+}
+/* classes used by the_meta() */
+ul.post-meta {
+	list-style: none;
+}
+
+ul.post-meta span.post-meta-key {
+	font-weight: bold;
+}
+
+.post-info {
+	font-size: 0.85em;
+	color: #808080;
+	margin: 0.5em 0;
+	padding: 0 0 0.3em 0;
+	font-family: verdana, helvetica, sans-serif;	
+	clear:both;
+}
+
+.post-info span {
+  margin: 0.6em 0 0 0;
+}
+
+.post-info li {
+	display: inline;
+}
+
+.post-info ul {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.post-info-co 
+{
+	text-align:right;
+	padding-right:15px;
+}
+.post-title{
+	margin: 0;	
+	border-bottom: 1px solid #c96666;		
+	text-align:right;
+	font-size:0.96em;	
+	padding:0;
+	color:#C4C5B7;
+	padding:0 0 0.1em 0;
+}
+.post-title em
+{
+	text-decoration:none;
+	background:url('img/permalien.png') left no-repeat;
+	padding-left:12px;
+	font-size:1.4em;
+	float:left;
+	font-style:normal;
+	font-family:Georgia, Arial, Sans-Serif;
+}
+#content .post-title em a
+{
+	text-decoration:none;
+	color:#AA7D39;
+}
+
+.post-content 
+{
+	margin: 0 0 1em 0;
+	padding: 0 10px 0 0;		
+	font-size:0.89em;
+}
+.post-footer 
+{
+	background:url('img/fdl_icon.gif') no-repeat center bottom;
+}
+
+/* sidebar Styles */
+
+#sidebar {
+	margin: 20px 0 0 40px;
+	width: 190px;
+	padding: 0 0 10px 2px;
+	font-family: Trebuchet MS, Arial,Verdana, helvetica, sans-serif;		
+	float:left;
+	display:inline;
+	color:#666;
+}
+html>body #sidebar {
+  width: 190px;
+}
+
+#sidebar h2 {
+	font-family: Georgia,Verdana, Arial, Helvetica, sans-serif;	
+font-size:1em;
+color:#666;
+margin:0.3em 0;
+padding:3px 0 3px 2em;
+background:transparent url('img/fdl_menu_1.jpg') no-repeat left center;
+}
+
+#sidebar h2.special {
+	font-family: Georgia,Verdana, Arial, Helvetica, sans-serif;	
+font-size:1em;
+color:#666;
+margin:0.3em 0;
+padding:3px 0 3px 2em;
+background:transparent url('img/fdl_menu_1.jpg') no-repeat left center;
+}
+
+#sidebar form {
+	margin: 0 0 1.5em 0;
+}
+
+#sidebar input#s {
+	width: 100%;
+	background: #F5F5F5;
+	border: 1px solid #669BB4;
+	color: #000;
+	margin: 0.5em 0;
+}
+
+#sidebar ul {
+		font-family: Verdana, Arial, Helvetica, sans-serif;	
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 0.5em 5px 1.5em;	
+}
+
+#sidebar ul li {
+  	margin: 0;
+	padding: 4px 0;
+	font-size: 0.8em;	
+}
+#sidebar ul li ul li{
+  	margin: 0;
+	padding: 3px 0;
+	font-size: 1em;	
+}
+#sidebar ul li h2{
+  	background:none;
+  	margin:0;
+  	padding:0 1em;
+}
+
+#sidebar ul li p {
+  margin: 0;
+padding: 0;
+font-size: 1.0em; 
+}
+/*  Footer Styles */
+
+#footer 
+{
+	clear:both;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	font-size: 0.9em;
+	background:#838270;
+	color:#cacaca;
+	text-transform:lowercase;
+	width:740px;
+}
+
+#footer cite {
+  color: #808080;
+}
+
+#footer a {
+	color: #f0f0f0;
+	text-decoration:none;
+}
+#footer a:hover {
+	color: #fcfcfc;
+}
+
+/*  Comment Styles */
+#comments, #respond{
+	margin: 1em 0;
+	font-size:1.1em;
+	font-weight:bold;
+	font-variant:small-caps;
+}
+#commentform 
+{
+	margin:10px;
+	padding:10px;
+}
+#rap .commentlist {
+	margin: 0;
+	padding: 0;
+	font-size:0.9em;
+	font-weight:normal;
+}
+#rap .commentlist li 
+{
+	list-style:none;
+	margin: 15px 0;
+	padding: 5px;	
+	background:#fafafa;
+	border:#eee 1px solid;
+}
+#rap .commentlist li .cmtinfo 
+{
+	font-size:1.1em;		
+}
+#rap .commentlist li cite 
+{
+	font-style:normal;
+	font-weight:bold;
+}
+#rap .commentlist li em 
+{
+	float:right;
+	margin:0;
+	padding:0;
+	font-style:normal;
+	font-size:0.9em;
+	color:#999;
+}
+#rap .commentlist .alt {
+	background:#f2f2e9;
+}
+textarea{
+	width: 90%;
+	height: 20em;
+	border: 1px solid #ccc;
+}
+
+input[type=text]{
+	border: 1px solid #ccc;
+}
+
+/*other*/
+.feedback 
+{
+	background:url('img/ico-talk-act.gif') no-repeat left;
+	padding-left:18px; 
+}
+ 
+.pauthor, .ptime, .pcat
+{
+	padding-right:5px;
+	padding-left:12px;
+}
+
+.pauthor
+{
+	background:url('img/user.png') no-repeat left;
+}
+.ptime
+{
+	background:url('img/heure.png') no-repeat left;
+}
+.pcat
+{
+	background:url('img/puce.png') no-repeat left;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1.3em;
+	line-height: 1.5em;	
+}
